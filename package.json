@@ -1,0 +1,29 @@
+{
+  "name": "merge-unit8arrays",
+  "version": "1.0.0",
+  "description": "A library for merging multiple Unit8Arrays into a single combined one.",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "scripts": {
+    "dev": "father dev",
+    "build": "father build",
+    "build:deps": "father prebundle",
+    "prepublishOnly": "father doctor && npm run build",
+    "doctor": "father doctor"
+  },
+  "keywords": [],
+  "authors": [
+    "i@timel.ink"
+  ],
+  "license": "MIT",
+  "files": [
+    "dist",
+    "compiled"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "father": "^4.1.2"
+  }
+}
